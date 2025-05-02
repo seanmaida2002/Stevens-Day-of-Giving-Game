@@ -4,7 +4,7 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1745976683|1233083920';
+const CACHE_VERSION = '1746148531|1208486484';
 /** @type {string} */
 const CACHE_PREFIX = 'Stevens Day of G-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
@@ -17,7 +17,7 @@ const ENSURE_CROSSORIGIN_ISOLATION_HEADERS = true;
 const CACHED_FILES = ["sdog.html","sdog.js","sdog.offline.html","sdog.icon.png","sdog.apple-touch-icon.png","sdog.audio.worklet.js","sdog.audio.position.worklet.js"];
 // Files that we might not want the user to preload, and will only be cached on first load.
 /** @type {string[]} */
-const CACHEABLE_FILES = ["sdog.wasm","sdog.pck","sdog.side.wasm"];
+const CACHEABLE_FILES = ["sdog.wasm","sdog.pck"];
 const FULL_CACHE = CACHED_FILES.concat(CACHEABLE_FILES);
 
 self.addEventListener('install', (event) => {
